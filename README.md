@@ -26,18 +26,26 @@
 # Data Understanding
 
 - Data of Ecommerce Customer
+- The Dataset has 8 columns and 500 rows
+- Data dictionary : 
+  Email = email of the customer
+  Address = address of the customer
+  Avatar = avatar of the customer
+  Avg. Session Length = customer avarage session time 
+  Time on App  = customer 
+  Time on Website  
+  Length of Membership 
+  Yearly Amount Spent 
 
 # Data preparation 
 
 - Code Used:
 - Python Version: 3.7.6
-- Packages: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, and Feature Engine 
+- Packages: Pandas, Numpy, Matplotlib, Seaborn, Sklearn and statsmodels
 
 # Data Cleansing 
 
-- There are about 25% of Null CustomerID in the data. We need to remove them as there is no way we can get the number of CustomerID.
-- There are few records with UnitPrice<0 and Quantity<0. We need to remove them from the analysis. This could represent cancelled or returned orders.
-- There is more than 90% of 'United Kingdom' customers, therefore we will restrict the data to only United Kingdom customers.
+- After checking the dataset, the data doesnt need to be clean because there are no missing value, Nan, Null or duplicated rows.
 
 # Exploratory Data Analysis
 
