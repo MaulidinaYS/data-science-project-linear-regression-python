@@ -54,19 +54,33 @@
 
 # Modeling Data: Linear Regression
 
-- Residuals
+- KDE Plot
 
-![image](https://user-images.githubusercontent.com/113915274/204023530-a5145518-e709-449e-8c10-3159f8b8477a.png)
+![image](https://user-images.githubusercontent.com/113915274/204073980-bc015643-e547-46dd-8956-0a69849625b8.png)
 
-* From the residual plot above, we can see that the residuals comply to the asumption one which is Linear Relationship
-* The residuals comply to the asumption two which is the variance of residuals is constant
-* The residuals comply to the asumption three as well which is they look independent variable because there is no meaningful pattern 
+* As we can see that all numerical columns look symmetric
 
-- QQ Plot
+- Bivariate Analysis
 
-![image](https://user-images.githubusercontent.com/113915274/204023682-bcc262d8-3108-495d-8860-5b1bf952a9a6.png)
+![image](https://user-images.githubusercontent.com/113915274/204074018-dffde7ca-ddfe-407c-a509-1dd51c8d1e09.png)
 
-* From the residual plot above, we can see that the residuals comply to the asumption four because residuals are normally distributed
+* Length of Membership is highly correlated with Yearly Amount Spent. it is mean the higher Length of Membership, the higher contribution of Yearly Amount Spent
+
+![image](https://user-images.githubusercontent.com/113915274/204074049-61850f62-0e17-4a83-93f3-42232e13648e.png)
+
+![image](https://user-images.githubusercontent.com/113915274/204074150-6fc6f4ee-281b-4257-9097-48af46ed54f0.png)
+
+![image](https://user-images.githubusercontent.com/113915274/204074160-ffed96bf-7fb5-47a6-970f-5da0b4b95ca8.png)
+
+* seems like there is no meaningful pattern above
+
+![image](https://user-images.githubusercontent.com/113915274/204074169-cfaf070b-a5be-4c75-9992-cc6746d3b6cb.png)
+
+![image](https://user-images.githubusercontent.com/113915274/204074176-68a0e780-ffc6-45f9-8463-8862c28bfdb5.png)
+
+* The higher `Time on App` will contribute increment on `Yearly Amount Spent`
+
+* Based on this visualization, we can see that `Length of Membership` is the most correlated feature with `Yearly Amount Spent`
 
 # Evaluating Model: Linear Regression
 
