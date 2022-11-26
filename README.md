@@ -49,18 +49,22 @@
 
 # Exploratory Data Analysis
 
-* From the coefficient values above, we can see that `Length of Membership` is the highest contribute in target variable increment. It's mean that an increase of 1 point in `Lengh of Membership`, while the other features are kept fixed, is associated with an increase of 61.89 point in `Yearly Amount Spent` (target variable)
-* If we want to choose do we have to focus our effort on `Mobile App` or `Website` development, based on table above the answer is on ` Mobile App`. Because the coefficient value on `Time on App` is biggest than coefficient value on `Time on Website`. It's mean, people that looking for shoping in mobile app will tend to buy the product
+![image](https://user-images.githubusercontent.com/113915274/204074366-aaa671bc-8e3f-4ad4-8459-a6d8f2762dfe.png)
 
-# Modeling Data: Linear Regression
+* overall, the minimum and maximum values make sense for each column
+* Mean ~ 50% in `Time on App`, `Time on Website`, `Yearly Amount Spent`, and `length of Membership` indicating symmetrical distribution
 
-- KDE Plot
+![image](https://user-images.githubusercontent.com/113915274/204074408-b07531e2-12cb-4990-a36f-4c1ae7a049d0.png)
+
+* all data is unique
+
+![image](https://user-images.githubusercontent.com/113915274/204074433-8b3b7262-c2e8-45cf-a2b2-89a23b4fb0cf.png)
+
+* There are a few outlier in numerical columns, but the value is still reasonable not that extreme, hence no need to handle specifically
 
 ![image](https://user-images.githubusercontent.com/113915274/204073980-bc015643-e547-46dd-8956-0a69849625b8.png)
 
 * As we can see that all numerical columns look symmetric
-
-- Bivariate Analysis
 
 ![image](https://user-images.githubusercontent.com/113915274/204074018-dffde7ca-ddfe-407c-a509-1dd51c8d1e09.png)
 
@@ -81,6 +85,28 @@
 * The higher `Time on App` will contribute increment on `Yearly Amount Spent`
 
 * Based on this visualization, we can see that `Length of Membership` is the most correlated feature with `Yearly Amount Spent`
+
+
+# Modeling Data: Linear Regression
+
+![image](https://user-images.githubusercontent.com/113915274/204074467-22e5ca93-3c1b-4211-a3bf-7e85451c5abc.png)
+
+* The values of vif score is around 1. It's mean that our features have no multicollinear indication. No need to drop any feature!
+
+![image](https://user-images.githubusercontent.com/113915274/204074483-f2694295-6dbd-4b0b-aa70-0b6addffded5.png)
+
+* From the coefficient values above, we can see that `Length of Membership` is the highest contribute in target variable increment. It's mean that an increase of 1 point in `Lengh of Membership`, while the other features are kept fixed, is associated with an increase of 61.89 point in `Yearly Amount Spent` (target variable)
+* If we want to choose do we have to focus our effort on `Mobile App` or `Website` development, based on table above the answer is on ` Mobile App`. Because the coefficient value on `Time on App` is biggest than coefficient value on `Time on Website`. It's mean, people that looking for shoping in mobile app will tend to buy the product
+
+![image](https://user-images.githubusercontent.com/113915274/204074493-1bda735d-c605-4e81-89f9-bed0a653ebe3.png)
+
+* From the residual plot above, we can see that the residuals comply to the asumption one which is Linear Relationship
+* The residuals comply to the asumption two which is the variance of residuals is constant
+* The residuals comply to the asumption three as well which is they look independent variable because there is no meaningful pattern 
+
+![image](https://user-images.githubusercontent.com/113915274/204074501-dee86588-8a07-450e-b143-bae591e29886.png)
+
+* From the residual plot above, we can see that the residuals comply to the asumption four because residuals are normally distributed
 
 # Evaluating Model: Linear Regression
 
